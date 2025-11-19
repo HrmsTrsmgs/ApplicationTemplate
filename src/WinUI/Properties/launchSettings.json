@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ABCDEApplicationTemplate (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ABCDEApplicationTemplate (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
