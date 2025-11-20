@@ -1,7 +1,7 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
-namespace ABCDEApplicationTemplate
+namespace Marimo.ABCDEApplicationTemplate
 {
     /// <summary>
     /// カウンター付きのメインウィンドウです。
