@@ -14,6 +14,30 @@
     </Window.SystemBackdrop>
 
     <Grid>
+        <RelativePanel Margin="24">
 
+            <!-- 数字を大きく表示する領域 -->
+            <Viewbox
+                x:Name="CounterViewBox"
+                RelativePanel.AlignHorizontalCenterWithPanel="True"
+                RelativePanel.AlignVerticalCenterWithPanel="True"
+                Margin="0,0,0,80">
+                <TextBlock
+                    x:Name="CounterTextBlock"
+                    Text="0"
+                    FontSize="72"
+                    TextAlignment="Center" />
+            </Viewbox>
+
+            <!-- 大きめのカウントボタン -->
+            <Button
+                x:Name="IncrementButton"
+                Content="カウントを増やす"
+                RelativePanel.AlignBottomWithPanel="True"
+                RelativePanel.AlignHorizontalCenterWithPanel="True"
+                Padding="40,20"
+                Margin="0,0,0,16"
+                Click="IncrementButton_Click" />
+        </RelativePanel>
     </Grid>
 </Window>
