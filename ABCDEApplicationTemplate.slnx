@@ -13,4 +13,6 @@
     <Platform Solution="*|x86" Project="x86" />
     <Deploy />
   </Project>
+  <Project Path="ViewModels.Tests/ViewModels.Tests.csproj" Id="e1edddf7-42bd-477e-a3e3-15de337341ce" />
+  <Project Path="ViewModels/ViewModels.csproj" Id="d54cf9a0-91f9-4915-bbac-58dd1a9784e2" />
 </Solution>

@@ -1,30 +1,17 @@
+using Marimo.ABCDEApplicationTemplate.ViewModels;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
 
-namespace Marimo.ABCDEApplicationTemplate
+namespace Marimo.ABCDEApplicationTemplate;
+
+public sealed partial class MainWindow : Window
 {
     /// <summary>
-    /// カウンター付きのメインウィンドウです。
+    /// MainWindow 逕ｨ縺ｮ ViewModel 繧貞叙蠕励＠縺ｾ縺吶�
     /// </summary>
-    public sealed partial class MainWindow : Window
+    public MainWindowViewModel ViewModel { get; } = new();
+
+    public MainWindow()
     {
-        private int _count = 0;
-
-        public MainWindow()
-        {
-            InitializeComponent();
-            UpdateCounterText();
-        }
-
-        private void IncrementButton_Click(object sender, RoutedEventArgs e)
-        {
-            _count++;
-            UpdateCounterText();
-        }
-
-        private void UpdateCounterText()
-        {
-            CounterTextBlock.Text = _count.ToString();
-        }
+        InitializeComponent();
     }
 }
