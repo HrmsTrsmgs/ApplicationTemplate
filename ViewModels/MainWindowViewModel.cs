@@ -12,7 +12,8 @@ namespace Marimo.ABCDEApplicationTemplate.ViewModels
         /// <summary>
         /// 現在のカウント値を取得します。
         /// </summary>
-        public int Count { get; private set; } = 0;
+        [ObservableProperty]
+        int _count;
 
         [RelayCommand]
         void Increment()

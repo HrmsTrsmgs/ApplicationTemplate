@@ -32,4 +32,24 @@ public class MainWindowViewModelTests
         // Assert
         count.Should().Be(1);
     }
+
+    [Fact]
+    public void カウントが変更されると変更通知が行われます()
+    {
+        // Arrange
+        var viewModel = new MainWindowViewModel();
+        string? propertyName = null;
+
+        viewModel.PropertyChanged += (_, e) =>
+        {
+            propertyName = e.PropertyName;
+        };
+
+        // Act
+        viewModel.IncrementCommand.Execute(null);
+
+        // Assert
+        propertyName.Should().Be(nameof(MainWindowViewModel.Count));
+    }
+
 }
