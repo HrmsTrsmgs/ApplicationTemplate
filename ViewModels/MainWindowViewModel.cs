@@ -2,23 +2,25 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace Marimo.ABCDEApplicationTemplate.ViewModels
+namespace Marimo.ABCDEApplicationTemplate.ViewModels;
+
+/// <summary>
+/// MainWindow 用のカウンター ViewModel です。
+/// </summary>
+public partial class MainWindowViewModel : ObservableObject
 {
     /// <summary>
-    /// MainWindow 用のカウンター ViewModel です。
+    /// 現在のカウント値を取得します。
     /// </summary>
-    public partial class MainWindowViewModel : ObservableObject
-    {
-        /// <summary>
-        /// 現在のカウント値を取得します。
-        /// </summary>
-        [ObservableProperty]
-        int _count;
+    [ObservableProperty]
+    int _count = 0;
 
-        [RelayCommand]
-        void Increment()
-        {
-            Count++;
-        }
+    /// <summary>
+    /// カウント値を 1 増加させます。
+    /// </summary>
+    [RelayCommand]
+    void Increment()
+    {
+        Count++;
     }
 }

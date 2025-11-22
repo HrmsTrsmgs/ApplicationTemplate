@@ -1,55 +1,47 @@
 ﻿using FluentAssertions;
 using Xunit;
 using Marimo.ABCDEApplicationTemplate.ViewModels;
+using Marimo.ABCDEApplicationTemplate.ViewModels.Tests.Share;
 
 namespace Marimo.ABCDEApplicationTemplate.ViewModels.Tests;
 
 public class MainWindowViewModelTests
 {
+    MainWindowViewModel Target { get; } = new();
+
     [Fact]
     public void カウントの初期値は0です()
     {
-        // Arrange
-        var viewModel = new MainWindowViewModel();
-
-        // Act
-        var count = viewModel.Count;
-
         // Assert
-        count.Should().Be(0);
+        Target.Count.Should().Be(0);
     }
 
     [Fact]
     public void カウントを1回増やすと1になります()
     {
-        // Arrange
-        var viewModel = new MainWindowViewModel();
-
         // Act
-        viewModel.IncrementCommand.Execute(null);
-        var count = viewModel.Count;
+        Target.IncrementCommand.Execute();
 
         // Assert
-        count.Should().Be(1);
+        Target.Count.Should().Be(1);
     }
 
     [Fact]
     public void カウントが変更されると変更通知が行われます()
     {
-        // Arrange
-        var viewModel = new MainWindowViewModel();
         string? propertyName = null;
 
-        viewModel.PropertyChanged += (_, e) =>
+        Target.PropertyChanged += (_, e) =>
         {
             propertyName = e.PropertyName;
         };
 
         // Act
-        viewModel.IncrementCommand.Execute(null);
+        Target.IncrementCommand.Execute();
 
         // Assert
         propertyName.Should().Be(nameof(MainWindowViewModel.Count));
     }
 
 }
+
