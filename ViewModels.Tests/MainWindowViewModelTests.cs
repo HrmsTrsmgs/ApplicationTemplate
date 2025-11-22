@@ -18,4 +18,18 @@ public class MainWindowViewModelTests
         // Assert
         count.Should().Be(0);
     }
+
+    [Fact]
+    public void カウントを1回増やすと1になります()
+    {
+        // Arrange
+        var viewModel = new MainWindowViewModel();
+
+        // Act
+        viewModel.IncrementCommand.Execute(null);
+        var count = viewModel.Count;
+
+        // Assert
+        count.Should().Be(1);
+    }
 }
