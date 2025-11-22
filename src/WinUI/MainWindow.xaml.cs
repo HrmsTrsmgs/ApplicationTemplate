@@ -6,7 +6,7 @@ namespace Marimo.ABCDEApplicationTemplate;
 public sealed partial class MainWindow : Window
 {
     /// <summary>
-    /// MainWindow —p‚Ì ViewModel ‚ğæ“¾‚µ‚Ü‚·B
+    /// MainWindow ç”¨ã® ViewModel ã‚’å–å¾—ã—ã¾ã™ã€‚
     /// </summary>
     public MainWindowViewModel ViewModel { get; } = new();
 
