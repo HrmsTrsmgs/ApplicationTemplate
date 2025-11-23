@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>Marimo.ABCDEApplicationTemplate.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <RootNamespace>Marimo.ABCDEApplicationTemplate.Presentation.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,5 +12,8 @@
   </ItemGroup>
   <ItemGroup>
     <InternalsVisibleTo Include="ViewModels.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
-using Marimo.ABCDEApplicationTemplate.ViewModels;
+using Marimo.ABCDEApplicationTemplate.Presentation.ViewModels;
 using Microsoft.UI.Xaml;
 
-namespace Marimo.ABCDEApplicationTemplate;
+namespace Marimo.ABCDEApplicationTemplate.Presentation;
 
 public sealed partial class MainWindow : Window
 {

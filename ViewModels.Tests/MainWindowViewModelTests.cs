@@ -1,9 +1,8 @@
 ﻿using FluentAssertions;
-using Xunit;
-using Marimo.ABCDEApplicationTemplate.ViewModels;
-using Marimo.ABCDEApplicationTemplate.ViewModels.Tests.Share;
+using Marimo.ABCDEApplicationTemplate.Presentation.ViewModels.Tests.Share;
+using Marimo.ABCDEApplicationTemplate.Presentation.ViewModels;
 
-namespace Marimo.ABCDEApplicationTemplate.ViewModels.Tests;
+namespace Marimo.ABCDEApplicationTemplate.Presentation.ViewModels.Tests;
 
 public class MainWindowViewModelTests
 {
