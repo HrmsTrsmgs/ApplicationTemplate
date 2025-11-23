@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace Marimo.ABCDEApplicationTemplate.ViewModels;
+namespace Marimo.ABCDEApplicationTemplate.Presentation.ViewModels;
 
 /// <summary>
 /// MainWindow 用のカウンター ViewModel です。

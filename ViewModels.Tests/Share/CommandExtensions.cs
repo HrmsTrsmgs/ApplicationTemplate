@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace Marimo.ABCDEApplicationTemplate.ViewModels.Tests.Share;
+namespace Marimo.ABCDEApplicationTemplate.Presentation.ViewModels.Tests.Share;
 
 public static class CommandExtensions
 {
