@@ -7,6 +7,8 @@
   <Folder Name="/prompts/">
     <File Path="prompts/開発指示.md" />
   </Folder>
+  <Project Path="Application.Tests/Application.Tests.csproj" Id="b93a8651-5e02-4286-9ca2-62e3f880eab4" />
+  <Project Path="Application/Application.csproj" Id="ed930873-466d-43b2-a64c-871b5dde94de" />
   <Project Path="src/WinUI/WinUI.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
