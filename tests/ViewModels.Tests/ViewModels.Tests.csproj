@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Marimo.ABCDEApplicationTemplate.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <RootNamespace>Marimo.ABCDEApplicationTemplate.Presentation.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,15 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\..\src\ViewModels\ViewModels.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Using Include="Xunit" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Counter\" />
   </ItemGroup>
 
 </Project>

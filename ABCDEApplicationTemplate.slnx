@@ -7,14 +7,14 @@
   <Folder Name="/prompts/">
     <File Path="prompts/開発指示.md" />
   </Folder>
-  <Project Path="Application.Tests/Application.Tests.csproj" Id="b93a8651-5e02-4286-9ca2-62e3f880eab4" />
-  <Project Path="Application/Application.csproj" Id="ed930873-466d-43b2-a64c-871b5dde94de" />
+  <Project Path="src/UseCases/UseCases.csproj" />
+  <Project Path="src/ViewModels/ViewModels.csproj" />
   <Project Path="src/WinUI/WinUI.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
     <Deploy />
   </Project>
-  <Project Path="ViewModels.Tests/ViewModels.Tests.csproj" Id="e1edddf7-42bd-477e-a3e3-15de337341ce" />
-  <Project Path="ViewModels/ViewModels.csproj" Id="d54cf9a0-91f9-4915-bbac-58dd1a9784e2" />
+  <Project Path="tests/UseCases.Tests/UseCases.Tests.csproj" />
+  <Project Path="tests/ViewModels.Tests/ViewModels.Tests.csproj" />
 </Solution>

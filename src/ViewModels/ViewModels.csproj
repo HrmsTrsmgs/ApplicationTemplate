@@ -14,6 +14,6 @@
     <InternalsVisibleTo Include="ViewModels.Tests" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\UseCases\UseCases.csproj" />
   </ItemGroup>
 </Project>

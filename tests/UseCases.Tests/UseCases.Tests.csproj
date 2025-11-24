@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Marimo.ABCDEApplicationTemplate.Presentation.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <RootNamespace>Marimo.ABCDEApplicationTemplate.Application.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
+    <ProjectReference Include="..\..\src\UseCases\UseCases.csproj" />
   </ItemGroup>
 
   <ItemGroup>
