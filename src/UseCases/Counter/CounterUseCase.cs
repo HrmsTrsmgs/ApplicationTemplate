@@ -12,22 +12,19 @@ namespace Marimo.ABCDEApplicationTemplate.Application.UseCases.Counter;
 /// メモリ上のカウンター値を保持しながら増加処理を行います。
 /// 今後のテスト追加にあわせて、ドメイン層やリポジトリへの委譲を検討します。
 /// </remarks>
-public sealed class CounterUseCase : ICounterUseCase
+public sealed class CounterUseCase
 {
     int _value;
 
-    /// <inheritdoc />
+    /// <summary>
+    /// 現在のカウンター状態を取得します。
+    /// </summary>
     public Task<CounterState> GetAsync(CancellationToken cancellationToken = default)
-    {
-        var state = new CounterState(_value);
-        return Task.FromResult(state);
-    }
+        => Task.FromResult(new CounterState(_value));
 
-    /// <inheritdoc />
+    /// <summary>
+    /// カウント値を 1 増加させた状態を取得します。
+    /// </summary>
     public Task<CounterState> IncrementAsync(CancellationToken cancellationToken = default)
-    {
-        _value++;
-        var state = new CounterState(_value);
-        return Task.FromResult(state);
-    }
+        => Task.FromResult(new CounterState(++_value));
 }
