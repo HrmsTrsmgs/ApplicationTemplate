@@ -1,4 +1,4 @@
-﻿namespace Marimo.ABCDEApplicationTemplate.UseCases.Counter;
+﻿namespace Marimo.ABCDEApplicationTemplate.Application.UseCases.CounterFeature;
 
 /// <summary>
 /// カウンターの状態を表します。

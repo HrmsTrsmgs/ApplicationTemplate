@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
-using Marimo.ABCDEApplicationTemplate.Application.UseCases.Counter;
+using Marimo.ABCDEApplicationTemplate.Application.UseCases.CounterFeature;
 
-namespace Marimo.ABCDEApplicationTemplate.Application.UseCases.Tests.Counter;
+namespace Marimo.ABCDEApplicationTemplate.Application.UseCases.Tests.CounterFeature;
 
 public class CounterUseCaseTests
 {

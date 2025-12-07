@@ -7,6 +7,7 @@
   <Folder Name="/prompts/">
     <File Path="prompts/開発指示.md" />
   </Folder>
+  <Project Path="Domain/Domain.csproj" Id="067fe546-6eaa-464a-be63-275aadbf639a" />
   <Project Path="src/UseCases/UseCases.csproj" />
   <Project Path="src/ViewModels/ViewModels.csproj" />
   <Project Path="src/WinUI/WinUI.csproj">
@@ -15,6 +16,7 @@
     <Platform Solution="*|x86" Project="x86" />
     <Deploy />
   </Project>
+  <Project Path="tests/Domain.Tests/Domain.Tests.csproj" />
   <Project Path="tests/UseCases.Tests/UseCases.Tests.csproj" />
   <Project Path="tests/ViewModels.Tests/ViewModels.Tests.csproj" />
 </Solution>
